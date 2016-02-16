@@ -254,8 +254,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.eot");
-  src: url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.woff2") format("woff2"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.woff") format("woff"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.ttf") format("truetype"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svgglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5919,6 +5919,9 @@ header .main-nav li > a {
   text-align: center;
   width: 100%;
   text-shadow: 1px 1px 5px black; }
+
+section .blog {
+  max-width: 80%; }
 
 .button-section {
   text-align: center; }
