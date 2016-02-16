@@ -1,0 +1,166 @@
+// Globals
+/* Bootstrap Variables */
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg"
+/* Import Bootstrap */
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/"
+
+body
+  font-family: "Inknut Antiqua", serif
+
+$green: rgb(32, 78, 50)
+
+//Header
+
+header
+  color: $green
+  h1
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 36px
+    span
+      font-weight: 400
+
+//Nav
+
+header
+  .navbar
+    div.container
+      padding-left: 30px
+      padding-right: 30px
+      max-width: 80%
+      border-bottom: 2px solid black
+      border-width: 80%
+      padding-bottom: 10px
+      padding-top: 10px
+
+header
+  .main-nav
+    li
+      text-align: center
+      padding-left: 0px
+      padding-right: 0px
+    li > a
+      color: black
+      text-transform: uppercase
+
+.nav-tabs.nav-justified > li > a
+  border-bottom: none
+
+//Body
+
+.articles
+  a
+    display: inline-block
+
+.articles,
+.image-wrapper,
+.image-wrapper img
+  height: auto
+  overflow: hidden
+
+@mixin darktint($imageurl)
+  background: linear-gradient(rgba(42, 44, 45, 0.8), rgba(42, 44, 45, 0.8)), url($imageurl)
+  background-size: cover
+  transition: background 1s
+
+@mixin picture($imageurl)
+  background-image: url($imageurl)
+  background-size: cover
+
+.image-wrapper
+  margin-bottom: 20px
+  text-align: center
+  width: 100%
+  height: 300px
+  color: white
+  a
+    text-decoration: none
+    height: 100%
+
+.first
+  @include picture("../../img/appalachians.jpg")
+  &:hover
+    @include darktint("../../img/appalachians.jpg")
+
+.second
+  @include picture("../../img/glass.jpg")
+  &:hover
+    @include darktint("../../img/glass.jpg")
+
+.third
+  @include picture("../../img/roman.jpg")
+  &:hover
+    @include darktint("../../img/roman.jpg")
+
+.fourth
+  @include picture("../../img/beach.jpg")
+  &:hover
+    @include darktint("../../img/beach.jpg")
+
+.fifth
+  @include picture("../../img/prairie.jpg")
+  &:hover
+    @include darktint("../../img/prairie.jpg")
+
+.sixth
+  @include picture("../../img/vatican.jpg")
+  &:hover
+    @include darktint("../../img/vatican.jpg")
+
+.caption-wrapper
+  padding-left: 10%
+  padding-right: 10%
+  padding-top: 10%
+  color: white
+  text-transform: uppercase
+  text-align: center
+  width: 100%
+  text-shadow: 1px 1px 5px black
+
+// Button
+
+.button-section
+  text-align: center
+
+.see-more
+  margin: 0 auto
+  width: 65%
+  height: 65px
+  margin-bottom: 15px
+  background-color: $green
+  border-radius: 0px
+  &:hover
+    background-color: darken($green, 10%)
+  a
+    display: inline-block
+    color: white
+    text-transform: uppercase
+    font-size: 24px
+    width: 100%
+    height: 100%
+    padding-top: 7px
+    &:hover
+      text-decoration: none
+
+//Footer
+
+footer
+  div.container
+    max-width: 80%
+    border-top: 2px solid black
+    padding-top: 20px
+    padding-bottom: 20px
+  .main-nav
+    li
+      text-align: center
+      padding-left: 0px
+      padding-right: 0px
+      text-transform: uppercase
+      &:first-of-type
+        padding-left: 15px
+        padding-right: 15px
+    li > a
+      color: black
+      text-transform: uppercase
+      i
+        padding-right: 15px
